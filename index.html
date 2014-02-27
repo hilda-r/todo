@@ -1,0 +1,60 @@
+<!doctype html>
+<!--<html manifest="manifest.appcache">-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="Author" content="Hilda Rytteke">
+    
+    <title>To Do List</title>
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+   
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Abel|Medula+One" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.11.0.min.js" type="application/javascript"></script> 
+  </head>
+  
+  <body>
+
+    <div class="content">
+      <header>
+        <h1>to do list</h1>
+        <p>This to do list uses local storage to save all your tasks locally in your browser. Bookmark the site to keep track of your tasks.</p>
+				<p>Tap or click a task to mark it as done.</p>
+      </header>
+    
+      <div id="form">
+        <form id="todo-form">
+          <input type="text" id="new-task" placeholder="add a task...">
+          <button type="submit" id="add-task">Add</button>
+        </form>
+      </div>
+      <div id="not-supported">
+        <p>Your current browser does not support HTML5 Local Storage. Please try the latest version of Safari, Chrome, Firefox or Internet Explorer.</p>
+      </div>
+      
+      <div id="the-lists">
+      
+      	<h3>all tasks</h3>
+        <ul id="todo-list"></ul>
+        
+        <h3>finished tasks</h3>
+        <ul id="todo-done"></ul>
+      </div>
+      
+      <div id="clear">
+        <a href="#" id="clear-all" title="Clear all tasks?">clear all</a>
+      </div>
+      
+      <div id="bookmark">
+        <p>Tap the <img src="share-icon.png" alt="Share icon"> (or +) button and choose Add to Home Screen to save a shortcut to the app on your iOS device.</p>
+      </div>
+    </div><!-- END #content -->
+  	
+		<script src="script.js" type="application/javascript"></script>
+  </body>
+</html>

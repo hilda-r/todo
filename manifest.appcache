@@ -1,0 +1,14 @@
+CACHE MANIFEST      
+# version 1.1 - 2014-02-21
+
+CACHE:
+index.html
+style.css
+script.js
+jquery-1.11.0.min.js
+share-icon.png
+
+FALLBACK:
+
+NETWORK:
+*
